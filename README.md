@@ -41,7 +41,7 @@ sudo docker exec -it container_UUID bash
 2. Make a src folder (/MURworkspace/src/), and then make a simulation folder in src (/MURworkspace/src/simulation)
    - src is the source folder, you’ll be putting packages you want to build there
    - simulation folder will hold all the mursim stuff, you can name it whatever you want
-3. Get mur_init.sh from https://github.com/MURDriverless/mursim_init, put it in the simulation folder (/MURworkspace/src/simulation)
+3. Get mur_init.sh from https://github.com/MURDriverless/mursim_init/tree/dev/Andrew_working/mur_init, put it in the simulation folder (/MURworkspace/src/simulation)
 4. Run `sudo mdock` on the workspace folder you designated for MUR workspace (/MURworkspace/)
 5. Run `cd /workspace` to get into the workspace folder on docker, it should show the path to /MURworkspace/
 6. Run `cd src/simulation/` to get into the simulation folder

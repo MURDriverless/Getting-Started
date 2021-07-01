@@ -58,3 +58,8 @@ sudo docker exec -it container_UUID bash
 1. Run `source devel/setup.bash` to source the setup file
 2. Run `roslaunch mursim_gazebo slow_lap.launch`
 3. Voila! 
+
+# What's nex?
+ROS will be integral to everything we do, so you can start with the ROS tutorials if you've had no experience at all
+ROS: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+You can test your understanding by going through the turtlesim tutorials http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line, perhaps with C++ since the Python codes are already available on the site. You must be able to at least complete the turtlesim tutorial before you have a basic understanding on how ROS works and how nodes communicate with one another, so do give it a go!

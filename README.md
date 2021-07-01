@@ -59,7 +59,7 @@ sudo docker exec -it container_UUID bash
 2. Run `roslaunch mursim_gazebo slow_lap.launch`
 3. Voila! 
 
-# What's nex?
+# What's next?
 ROS will be integral to everything we do, so you can start with the ROS tutorials if you've had no experience at all
 
 ROS: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment, at the bottom you can go to the next tutorial.

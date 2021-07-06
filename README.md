@@ -2,9 +2,11 @@
 A step by step guide to getting MURsim to run on your Ubuntu.
 
 # 0) Make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu
-If you don’t have enough space, please allocate/get more space.
+To partition your current Windows 10 drive to dual boot Ubuntu, this works pretty well https://www.youtube.com/watch?v=lI3ywh636IU
 
-If you're using dual boot with Windows (https://www.youtube.com/watch?v=lI3ywh636IU):
+If you already have Ubuntu installed but don’t have enough space, please allocate/get more space.
+
+If you're using dual boot with Windows and want to allocate more space:
 1. Disk Management to shrink Windows Volume
    - If you’re facing issues while shrinking, https://www.winhelponline.com/blog/you-cannot-shrink-volume-beyond-point-disk-mgmt/?fbclid=IwAR2yXPd_RQhAVZplS2mzlSXEOtv-hrGCqICEZGgSrhtawZwSMEfaIvcGhUM
 2. Use trial Ubuntu from Ubuntu boot iso to repartition extra space into your existing Ubuntu with GParted

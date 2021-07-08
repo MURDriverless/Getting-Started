@@ -1,10 +1,10 @@
 # Getting-Started
-A step by step guide to getting MURsim to run on your Ubuntu.
+A step by step guide to getting MURsim to run on your Ubuntu 18.04 LTS.
 
-# 0) We're currently using Ubuntu 18.04 LTS, Make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu
-Check your ubuntu version with `lsb_release -a`
-
+# To use Docker, make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu 18.04 LTS!
 To partition your current Windows 10 drive to dual boot Ubuntu, this works pretty well https://www.youtube.com/watch?v=lI3ywh636IU
+
+If you're not sure which Ubuntu you've installed, check your ubuntu version with `lsb_release -a` 
 
 If you already have Ubuntu installed but don’t have enough space, please allocate/get more space.
 
@@ -13,7 +13,8 @@ If you're using dual boot with Windows and want to allocate more space:
    - If you’re facing issues while shrinking, https://www.winhelponline.com/blog/you-cannot-shrink-volume-beyond-point-disk-mgmt/?fbclid=IwAR2yXPd_RQhAVZplS2mzlSXEOtv-hrGCqICEZGgSrhtawZwSMEfaIvcGhUM
 2. Use trial Ubuntu from Ubuntu boot iso to repartition extra space into your existing Ubuntu with GParted
 
-If you're not using NVIDIA GPU, please contact the team lead. You can continue on with installing ROS and doing ROS tutorials, just skip to the bottom.
+# No NVIDIA GPU, no Docker
+If you're not using NVIDIA GPU, please follow https://github.com/MURDriverless/mursim/tree/dev/aldrei21. You can continue on with installing ROS and doing ROS tutorials, just skip to the bottom.
 
 ## 1) Get Docker
 1. Follow steps here: https://docs.docker.com/engine/install/ubuntu/

@@ -1,7 +1,7 @@
 # Getting-Started
 A step by step guide to getting MURsim to run on your Ubuntu.
 
-# 0) We're curerrently using Ubuntu 18.04 LTS, Make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu
+# 0) We're currently using Ubuntu 18.04 LTS, Make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu
 Check your ubuntu version with `lsb_release -a`
 
 To partition your current Windows 10 drive to dual boot Ubuntu, this works pretty well https://www.youtube.com/watch?v=lI3ywh636IU

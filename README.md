@@ -1,7 +1,9 @@
 # Getting-Started
 A step by step guide to getting MURsim to run on your Ubuntu.
 
-# 0) Make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu
+# 0) We're curerrently using Ubuntu 18.04 LTS, Make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu
+Check your ubuntu version with `lsb_release -a`
+
 To partition your current Windows 10 drive to dual boot Ubuntu, this works pretty well https://www.youtube.com/watch?v=lI3ywh636IU
 
 If you already have Ubuntu installed but don’t have enough space, please allocate/get more space.
@@ -11,13 +13,15 @@ If you're using dual boot with Windows and want to allocate more space:
    - If you’re facing issues while shrinking, https://www.winhelponline.com/blog/you-cannot-shrink-volume-beyond-point-disk-mgmt/?fbclid=IwAR2yXPd_RQhAVZplS2mzlSXEOtv-hrGCqICEZGgSrhtawZwSMEfaIvcGhUM
 2. Use trial Ubuntu from Ubuntu boot iso to repartition extra space into your existing Ubuntu with GParted
 
+If you're not using NVIDIA GPU, please contact the team lead. You can continue on with installing ROS and doing ROS tutorials, just skip to the bottom.
+
 ## 1) Get Docker
 1. Follow steps here: https://docs.docker.com/engine/install/ubuntu/
 2. Test if it works running `sudo docker run hello-world`
 
 ## 2) Building MURauto Docker Image
 1. Clone https://github.com/MURDriverless/MUR_Docker to a folder for Docker
-2. Follow the instructions under Build and Usage. You'll need to Google search for the missing files.
+2. Follow the instructions under Build and Usage. We're using ROS Melodic at the moment, which is the ROS version that pairs with Ubuntu 18.04 LTS. Link to install ROS Melodic: http://wiki.ros.org/melodic/Installation/Ubuntu. You'll need to Google search for the missing files.
 3. After you do `sudo ./run.sh`, you should now be in docker already and get something like
 ```
 randomalphanum
@@ -64,6 +68,6 @@ sudo docker exec -it container_UUID bash
 # What's next?
 ROS will be integral to everything we do, so you can start with the ROS tutorials if you've had no experience at all
 
-ROS: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment, at the bottom you can go to the next tutorial.
+We're using ROS Melodic at the moment, which is the ROS version that pairs with Ubuntu 18.04 LTS. Link to install ROS Melodic: http://wiki.ros.org/melodic/Installation/Ubuntu, after installing, at the bottom you can go to the next tutorial.
 
 After going through the ROS tutorials, you can test your understanding by going through the turtlesim tutorials http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line, perhaps with C++ since the Python codes are already available on the site. You must be able to at least complete the turtlesim tutorial before you can be certain you have a basic understanding on how ROS works and how nodes communicate with one another, so do give it a go!

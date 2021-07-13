@@ -1,5 +1,5 @@
 # Getting-Started
-A step by step guide to getting MURsim to run on your Ubuntu 18.04 LTS.
+A step by step guide to getting MURsim to run on your Ubuntu 18.04 LTS and some tips on connecting to the Jetson AGX Xavier.
 
 # To use Docker, make sure you are running on an NVIDIA GPU and have enough space (at least 85GB) on Ubuntu 18.04 LTS!
 To partition your current Windows 10 drive to dual boot Ubuntu, this works pretty well https://www.youtube.com/watch?v=lI3ywh636IU
@@ -72,3 +72,20 @@ ROS will be integral to everything we do, so you can start with the ROS tutorial
 We're using ROS Melodic at the moment, which is the ROS version that pairs with Ubuntu 18.04 LTS. Link to install ROS Melodic: http://wiki.ros.org/melodic/Installation/Ubuntu, after installing, at the bottom you can go to the next tutorial.
 
 After going through the ROS tutorials, you can test your understanding by going through the turtlesim tutorials http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line, perhaps with C++ since the Python codes are already available on the site. You must be able to at least complete the turtlesim tutorial before you can be certain you have a basic understanding on how ROS works and how nodes communicate with one another, so do give it a go!
+
+# Connecting to the Jetson AGX Xavier 
+The SSD on the Xavier is found at: mur@10.42.0.1:/mnt/SSD 
+In other words, you can store your files in the SSD by placing them in the folder "/mnt/SSD" 
+
+To move your files to the Xavier:
+1) Connect to the Xavier via WiFi i.e. click "MURD_Jetson" on your laptop.
+2) ssh into it using: "ssh mur@10.42.0.1" then enter the password when prompted. 
+3) Move your files into the Xavier using: "sudo scp -r <file_path/folder_name> mur@10.42.0.1:/mnt/SSD
+
+To restart the Xavier, you can use: "sudo reboot" 
+
+Nano is not installed on the Xavier (as of 13/07/2021) so you may need to use vim to edit your files. Some useful shortcuts are:
+1) ctrl + Z to exit vim 
+2) press "i" to go into insert mode 
+3) press "ESC" to exit insert mode
+4) press ":wq" to save and close the file 
